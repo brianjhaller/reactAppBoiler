@@ -1,0 +1,74 @@
+/* boiler plate but this is one css file for the entire react project basically...
+
+.App {
+  position: relative;
+  top: 0;
+  text-align: center;
+  display: grid;
+  grid-template: repeat(2, 80px) / auto;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 100vh;
+}
+
+h1 {
+  height: 50px;
+  margin: 10px 0;
+}
+
+select {
+  height: 25px;
+  width: 150px;
+  margin-bottom: 10px;
+  color: lightgray;
+  font-size: 16px;
+  background-color: dimgray;
+}
+select:focus {
+  outline: none;
+}
+
+label {
+  color: lightgray;
+}
+
+input {
+  width: 150px;
+  height: 15px;
+}
+
+.flexEnd {
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: blue;
+  margin: 25px 0 10px 0;
+}
+
+* {
+  color: dimgray;
+}
+
+button {
+  color: lightgray;
+  font-size: 16px;
+  background-color: dimgray;
+  border-radius: 5px;
+  height: 25px;
+  width: 100px;
+}
+
+button:focus {
+  outline: none;
+}
+
+#sizeSlider {
+  margin-left: 18px;
+}
+
+.darkMode {
+  font-size: 7px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+} */
