@@ -1,29 +1,20 @@
 // require in express
 const express = require('express');
 const path = require('path');
-
 const app = express();
 const PORT = 3000;
+
+const bodyParser = require('body-parser')
 
 // parse req body into json
 app.use(bodyParser.json());
 
-
 // serve up static files when scripts are requested from index.html
-app.use('/build', express.static(path.join(__dirname, './build')));
-
-// app.get('/favicon', (req, res, next) => {
-//   console.log('get favicon');
-//   res.set('Content-Type', 'text/html').sendFile(path.resolve(__dirname, './public/index.html'));
-// });
-
-app.get('/imgUrls', (req, res) => {
-  res.send(JSON.stringify(imgUrls));
-});
+app.use('/build', express.static(path.resolve(__dirname, '../build')));
 
 // load up index.html endpoint
 app.get('/', (req, res) => {
-  res.set('Content-Type', 'text/html').sendFile(path.resolve(__dirname, './index.html'));
+  res.set('Content-Type', 'text/html').sendFile(path.resolve(__dirname, '../index.html'));
 });
 
 // standard bad endpoint, send 404

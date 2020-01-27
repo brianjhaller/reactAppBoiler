@@ -5,25 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server.js",
-    "start": "node server.js",
+    "start": "nodemon server/server.js",
     "prestart": "npm run build",
     "build": "NODE_ENV=production webpack",
-    "dev": "NODE_ENV=development nodemon server.js & webpack-dev-server --open"
+    "dev": "NODE_ENV=development nodemon server/server.js & webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexchao26/hooks-demo.git"
+    "url": "git+https://github.com/brianjhaller"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexchao26/hooks-demo/issues"
+    "url": "https://github.com/brianjhaller"
   },
-  "homepage": "https://github.com/alexchao26/hooks-demo#readme",
+  "homepage": "https://github.com/brianjhaller",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "qs": "^6.9.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "webpack": "^4.41.0"
